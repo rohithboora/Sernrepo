@@ -1,6 +1,6 @@
 Feature: Order a coffee
 
   Scenario: Order a cappuccino
-    Given I am thirsty
-    When I order a cappuccino
-    Then I should not receive a latte
+    Given I open Google
+    When I search for testing
+    Then I should find the results Bob
