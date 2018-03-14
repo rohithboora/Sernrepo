@@ -7,7 +7,6 @@ import net.thucydides.core.pages.PageObject;
 @DefaultUrl("https://www.google.com")
 public class GoogleHome extends PageObject {
 
-    @Step
     public void Search() {
 
 

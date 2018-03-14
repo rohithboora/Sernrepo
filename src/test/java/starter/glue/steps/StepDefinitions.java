@@ -30,4 +30,5 @@ public class StepDefinitions {
     @Then("^I should find the results Bob$")
     public void iShouldFindTheResultsBob() {
     }
+
 }
