@@ -1,24 +1,21 @@
 package starter.glue.pageobjects;
 
+import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.annotations.Step;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.BrowserType;
+import net.thucydides.core.pages.PageObject;
 
-import java.sql.Driver;
+@DefaultUrl("https://www.google.com")
+public class GoogleHome extends PageObject {
 
-import static org.openqa.grid.common.SeleniumProtocol.Selenium;
-
-public class GoogleHome {
-    @Step
-    public void openPage() {
-
-    }
     @Step
     public void Search() {
+
 
     }
 
     public Object verifyresults() {
-        return  Selenium.equals()
+
+        return this;
+
     }
 }
