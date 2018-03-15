@@ -1,16 +1,9 @@
-package starter.glue.steps;
+package ui.steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Steps;
-import org.openqa.selenium.WebDriver;
-import starter.glue.pageobjects.GoogleHome;
-
-import static net.bytebuddy.matcher.ElementMatchers.is;
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import ui.pageobjects.GoogleHome;
 
 public class StepDefinitions {
 

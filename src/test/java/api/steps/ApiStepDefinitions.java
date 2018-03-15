@@ -1,12 +1,10 @@
-package starter.glue.steps;
+package api.steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import org.junit.Assert;
-import starter.glue.actions.ApiActions;
+import api.actions.ApiActions;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

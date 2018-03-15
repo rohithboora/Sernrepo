@@ -1,4 +1,4 @@
-package starter.glue.test;
+package ui.utils;
 
 import net.thucydides.core.webdriver.DriverSource;
 import org.openqa.selenium.WebDriver;

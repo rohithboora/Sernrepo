@@ -1,13 +1,9 @@
-package starter.glue.actions;
+package api.actions;
 
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
-import starter.glue.test.Configuration;
-
-import java.net.URL;
-import java.util.Properties;
+import api.utils.Configuration;
 
 
 public class ApiActions {

@@ -1,4 +1,4 @@
-package starter.glue.test;
+package api.utils;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.util.StringUtils;

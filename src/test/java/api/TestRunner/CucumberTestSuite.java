@@ -1,15 +1,15 @@
-package starter.glue;
+package api.TestRunner;
 
 import cucumber.api.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
-import net.thucydides.core.annotations.Managed;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
+        tags = {"@rob"},
         plugin = {"pretty"},
         features = "src/test/resources/features",
-        glue = "starter.glue"
+        glue = "api.steps"
 )
 public class CucumberTestSuite {
 
