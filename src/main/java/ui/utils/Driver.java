@@ -47,7 +47,7 @@ public class Driver implements DriverSource {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--disable-extensions");
                 options.addArguments("--no-first-run");
-                //options.addArguments("--headless");
+                options.addArguments("--headless");
                 return new ChromeDriver(options);
 
             case "ie":
