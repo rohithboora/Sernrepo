@@ -14,8 +14,8 @@ public class ApiStepDefinitions {
     @Steps
     private static ApiActions apiActions;
 
-    @Given("^the (.*) endpoint is availble$")
-    public void thePEGAEndpointIsAvailble(String name) {
+    @Given("^the (.*) endpoint is available$")
+    public void thePEGAEndpointIsAvailable(String name) {
         apiActions.restEndpointIsAvailable(name);
     }
 
