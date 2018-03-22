@@ -1,7 +1,7 @@
 @jack
-Feature: Order a coffee
+Feature: Search for testing
 
-  Scenario: Order a cappuccino
+  Scenario: Searching for Wikipedia testing results
     Given I open Google
-    When I search for testing
-    Then I should find the results Bob
+    When I search for "Unit testing"
+    Then I should find "Unit testing - Wikipedia"
