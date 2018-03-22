@@ -11,23 +11,34 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
+import java.nio.file.Path;
 
 
 public class Driver implements DriverSource {
 
-    String UserDir = System.getProperty("user.dir");
+    String driverDir = System.getProperty("user.dir")
+            + File.separator +"src"
+            + File.separator +"test"+ File.separator +"resources"
+            + File.separator +"drivers" + File.separator ;
+    String os = System.getProperty("os.name");
     String browser = ReadProperty.loadPropertyValue("webdriver.browser","application");
 
     public Driver() {
-        System.setProperty("webdriver.edge.driver", constructFilePath("MicrosoftWebDriver.exe"));
-        System.setProperty("webdriver.phantomjs.driver", constructFilePath("phantomjs.exe"));
+        System.setProperty("webdriver.edge.driver", constructFilePath("MicrosoftWebDriver"));
+        System.setProperty("webdriver.phantomjs.driver", constructFilePath("phantomjs"));
         System.setProperty("webdriver.chrome.driver", constructFilePath("chromedriver"));
-        System.setProperty("webdriver.ie.driver", constructFilePath("IEDriverServer.exe"));
+        System.setProperty("webdriver.ie.driver", constructFilePath("IEDriverServer"));
     }
 
     private String constructFilePath(String driverName){
-        return UserDir+ File.separator +"src"+ File.separator +"test"+ File.separator +"resources"+
-                File.separator +"drivers"+ File.separator + driverName;
+        if (os.contains("Windows")){
+            return driverDir + "windows" + File.separator + driverName + ".exe";
+        }
+        else if (os.contains("OS X")){
+            return driverDir + "osx" + File.separator + driverName;
+        }
+        return null;
+
     }
 
     @Override
