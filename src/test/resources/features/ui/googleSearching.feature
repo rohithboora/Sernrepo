@@ -1,4 +1,4 @@
-@jack
+@ui
 Feature: Search for testing
 
   Scenario: Searching for Wikipedia testing results

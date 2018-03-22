@@ -2,12 +2,9 @@ package ui.pageobjects;
 
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import java.util.List;
 
 @DefaultUrl("https://www.google.com")
 public class GoogleHome extends PageObject {

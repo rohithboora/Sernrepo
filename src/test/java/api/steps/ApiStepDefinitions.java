@@ -21,6 +21,7 @@ public class ApiStepDefinitions {
 
     @When("^I hit the endpoint$")
     public void iHitTheEndpoint()  {
+        System.out.print(System.getProperty("os.name"));
         apiActions.hitEndpoint();
     }
 

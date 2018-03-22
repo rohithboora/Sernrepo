@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        tags = {"@rob"},
+        tags = {"@api"},
         plugin = {"pretty"},
         features = "src/test/resources/features",
         glue = "api.steps"

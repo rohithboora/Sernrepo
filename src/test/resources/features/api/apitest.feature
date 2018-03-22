@@ -1,4 +1,4 @@
-@rob
+@api
 Feature: Hit the OPEN Endpoint
 
   Scenario: Test we can hit the endpoint for the OPEN Solution

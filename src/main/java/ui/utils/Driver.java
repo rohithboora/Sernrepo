@@ -21,7 +21,7 @@ public class Driver implements DriverSource {
     public Driver() {
         System.setProperty("webdriver.edge.driver", constructFilePath("MicrosoftWebDriver.exe"));
         System.setProperty("webdriver.phantomjs.driver", constructFilePath("phantomjs.exe"));
-        System.setProperty("webdriver.chrome.driver", constructFilePath("chromedriver.exe"));
+        System.setProperty("webdriver.chrome.driver", constructFilePath("chromedriver"));
         System.setProperty("webdriver.ie.driver", constructFilePath("IEDriverServer.exe"));
     }
 
